@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+sourceCompatibility = 17
+mainClassName = 'com.valhalla.Main'
+
+archivesBaseName = "${project.archives_base_name}"
+
+group = "${project.group}"
+version = "${project.lib_version}"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api files('lib/BaseEngine-1.1.0.jar')
+    api files('lib/java-openal-2.0.0.jar')
+    runtimeOnly 'net.java.dev.jna:jna:5.12.1'
+}
