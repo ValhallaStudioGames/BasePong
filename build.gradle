@@ -18,7 +18,6 @@ repositories {
 }
 
 dependencies {
-    api files('lib/BaseEngine-1.1.0.jar')
-    api files('lib/java-openal-2.0.0.jar')
+    api 'io.github.valhallastudiogames:BaseEngine:1.1.0'
     runtimeOnly 'net.java.dev.jna:jna:5.12.1'
 }
