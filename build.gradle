@@ -19,5 +19,4 @@ repositories {
 
 dependencies {
     api 'io.github.valhallastudiogames:BaseEngine:1.1.0'
-    runtimeOnly 'net.java.dev.jna:jna:5.12.1'
 }
